@@ -1,4 +1,4 @@
-FROM tomcat
+FROM nginx
 MAINTAINER sreekanth "info@cloudsoftsol.com
-COPY ./target/*.jar /usr/local/tomcat/webapps/
-CMD ["catalina.sh", "run"]
+COPY ./target/*.jar /var/www/html/
+
